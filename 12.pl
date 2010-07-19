@@ -1,9 +1,9 @@
-$file='D:\Git\Git_Repo\README';
+$file='D:\Git\Git_Repo\README1';
 $dir='D:\Git\Git_Repo';
 #open(INFO,"$file")||die "Cannotopen$file!\n";
 opendir(TD,"$dir")||die "Cannotopen$dir!\n";
 while($file1=readdir TD){
-open(FILEH,">$dir/$file1");
+open(FILEH,">>$dir/$file1");
 print FILEH "add success";
 close(FILEH);
 }
